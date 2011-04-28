@@ -224,8 +224,8 @@ class Rump < Thor
 
   private
   def has_frozen_components?
-    puppet = system("bundle show puppet")
-    facter = system("bundle show facter")
+    puppet = system("bundle show puppet 2>&1 > /dev/null")
+    facter = system("bundle show facter 2>&1 > /dev/null")
 
     puppet && facter
   end
