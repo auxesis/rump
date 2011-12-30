@@ -1,3 +1,8 @@
+#!/usr/bin/env ruby
+
+require 'rubygems'
+require 'bundler/setup'
+
 begin
   require 'jeweler'
   Jeweler::Tasks.new do |gemspec|
